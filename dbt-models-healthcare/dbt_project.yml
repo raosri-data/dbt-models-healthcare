@@ -1,0 +1,6 @@
+name: 'dbt_models_healthcare'
+version: '1.0'
+config-version: 2
+profile: 'your_snowflake_profile'
+model-paths: ['models']
+macro-paths: ['macros']
