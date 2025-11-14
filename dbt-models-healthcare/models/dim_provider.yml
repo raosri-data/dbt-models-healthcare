@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_provider
+    description: "Provider dimension table for downstream marts."
+    columns:
+      - name: provider_id
+        tests:
+          - not_null
+          - unique
+      - name: npi
+        description: "National Provider Identifier"
+      - name: provider_full_name
+      - name: specialty
+      - name: phone
+      - name: email
