@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_claim
+    description: "Staging model for claims raw data. Cleans and standardizes fields."
+    columns:
+      - name: claim_id
+        tests:
+          - not_null
+          - unique
+      - name: patient_id
+      - name: provider_id
+      - name: service_date
+      - name: billed_amount
+      - name: paid_amount
+      - name: claim_status
