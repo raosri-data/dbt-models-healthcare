@@ -1,0 +1,12 @@
+name: 'healthcare_dbt'
+version: '1.0'
+profile: 'healthcare_profile'
+
+models:
+  healthcare_dbt:
+    staging:
+      +schema: staging
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
